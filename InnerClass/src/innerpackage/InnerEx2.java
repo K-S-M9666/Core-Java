@@ -1,0 +1,46 @@
+package innerpackage;
+class Outer1
+{
+	void Display()
+	{
+		class Inner
+		{
+			void InnerDisplay()
+			{
+				System.out.println("hello");
+			}
+		}
+		Inner i=new Inner();
+		i.InnerDisplay();
+	}
+	
+}
+
+
+/// Another Example 
+interface My
+{
+	void display();
+}
+class demo
+{
+	public void meth()
+	{
+		My m =new My()
+				{
+			         public void display()
+			         {
+			        	 System.out.println("Hello");
+			         }
+				};
+				m.display();
+	}
+}
+public class InnerEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

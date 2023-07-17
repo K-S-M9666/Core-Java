@@ -1,0 +1,66 @@
+package multithreading;
+
+class MyThread1 extends Thread
+{
+	/*
+	 * public MyThread1(String name) { super(name); //setPriority(MIN_PRIORITY); }
+	 */
+	public void run()
+	{
+		int count=1;
+		
+		while(true)
+		{
+			System.out.println(count++ +"My Thread");
+			
+			
+			/*
+			 * try { Thread.sleep(1000); } catch(InterruptedException e) {
+			 * System.out.println(e); }
+			 */
+		}
+	}
+}
+public class ThreadTest {
+
+	public static void main(String[] args) throws Exception {
+		MyThread1 t1=new MyThread1();
+		t1.start();
+		
+		int i=1;
+		while(true)
+		{
+			System.out.println(i +"Main");
+			//Thread.yield();
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 * t1.setDaemon(true); t1.start(); Thread mainThread=Thread.currentThread();
+		 * mainThread.join();
+		 */
+		
+		
+		
+		
+		
+		
+		//t1.interrupt();
+		
+		/*
+		 * System.out.println("Id :"+ t1.getId()); System.out.println("Name :"+
+		 * t1.getName()); System.out.println("Priority :"+t1.getPriority()); t1.start();
+		 * System.out.println("State :"+t1.getState());
+		 * System.out.println("IsAlive"+t1.isAlive());
+		 */
+		
+        
+	}
+
+}
